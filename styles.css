@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+/*nav-links*/
+header {
+    background: #03579c;
+    padding: 15px 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+/*hero section*/
+.hero{
+    background: url('assests/hero-1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+
+}
+.hero p{
+    font-size: 1.2rem;
+}
+.btn-hero{
+    display:inline-block;
+    padding: 10px 30px;
+    background: #fffcfc;
+    color: #e50202;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+.btn-hero:hover{
+    background: #e50202;
+    color: #fffcfc;
+}
+/* About Section */
+.about {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #03579c;
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Services Section */
+.services {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+
+.sec-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #03579c;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #027DE520;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #03579c;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    background: #027DE5;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(2,125,229,0.3);
+}
+
+/* Contact Section */
+.contact {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #03579c;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: #027DE5;
+    box-shadow: 0 0 5px rgba(2,125,229,0.3);
+}
+
+.contact textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact button {
+    background: #027DE5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #03579c;
+}
+
+/* Footer */
+footer {
+    background: #027DE5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+/* large Tablet (992px and below) */
+@media (max-width: 992px) {
+    body{
+        align-items: center;  
+    }
+   nav ul{
+    gap:20px;
+   }
+   .hero{
+    height: 350px;
+   }
+   .hero h1{
+    font-size: 1.8rem;
+   }
+   .service-grid{
+    grid-template-columns: repeat(2, 1fr);
+   }
+}
+/* Small Tablet (768px and below) */
+@media (max-width: 768px) {
+   header{
+    padding: 12px 20px;
+   }
+   nav ul{
+    gap:15px;
+    flex-wrap: wrap;
+   }
+   nav a{
+    font-size:0.95rem
+   }
+   .hero{
+    height: 300px;
+   }
+    .hero h1{
+     font-size: 1.5rem;
+    }
+    .hero p{
+        font-size: 1rem;
+    }
+    .btn-hero{
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    .about{
+        padding: 40px 15px;
+
+    }
+    .about h2{
+        font-size: 2rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+    .services{
+        padding: 40px 15px;
+    }
+}
