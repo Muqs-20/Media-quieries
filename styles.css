@@ -256,4 +256,164 @@ footer p {
     .services{
         padding: 40px 15px;
     }
+    .sec-title{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .service-grid{
+        grid-template-columns: repeat(2fr);
+        gap: 15px;
+    }
+    .card{
+        font-size: 16px;
+        padding: 25px 15px;
+    }
+    .contact{
+        padding: 40px 15px;
+    }
+     .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .contact button {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    footer p {
+        font-size: 0.95rem;
+    }
 }
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px 15px;
+        margin: -20px -20px 0 -20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        width: auto;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 6px 10px;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        height: 250px;
+        margin: 0 -10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .btn-hero {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+
+    .about {
+        padding: 30px 15px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .services {
+        padding: 30px 15px;
+    }
+
+    .sec-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contact button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
